@@ -58,7 +58,7 @@ const page = defineCollection({
       relativePath: z.string(),
     }),
     title: z.string(),
-    blocks: z.array(z.any()).optional(),
+    blocks: z.array(z.any()).nullish(),
     body: z.any(),
   }),
 })
