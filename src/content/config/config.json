@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Casey Industrial Park ",
+    "description": "Casey Industrial Park is a 1,000,000 square foot industrial facility located 3 miles outside of downtown Youngstown, OH",
+    "siteOwner": "Casey Industrial Park "
+  },
+  "nav": [
+    {
+      "title": "Site Info",
+      "subItems": [
+        {
+          "title": "Site Utilities",
+          "link": "/utilities/"
+        },
+        {
+          "title": "Driving Directions",
+          "link": "/directions/"
+        }
+      ]
+    },
+    {
+      "title": "Space Available",
+      "subItems": [
+        {
+          "title": "Overview",
+          "link": "/space/"
+        },
+        {
+          "title": "Building No. 1",
+          "link": "/blog/building1/"
+        },
+        {
+          "title": "Building No. 2",
+          "link": "/blog/building2/"
+        },
+        {
+          "title": "Building No. 3",
+          "link": "/blog/building3/"
+        },
+        {
+          "title": "Building No. 4",
+          "link": "/blog/building4/"
+        },
+        {
+          "title": "Building No. 9",
+          "link": "/blog/building9/"
+        },
+        {
+          "title": "Building No. 14",
+          "link": "/blog/building14/"
+        },
+        {
+          "title": "Electric Shop",
+          "link": "/shop/"
+        }
+      ]
+    },
+    {
+      "title": "Maps",
+      "subItems": [
+        {
+          "title": "Overview Maps",
+          "link": "/maps/"
+        },
+        {
+          "title": "Area Map",
+          "link": "/areamap/"
+        },
+        {
+          "title": "Local Map",
+          "link": "/localmap/"
+        },
+        {
+          "title": "Street Map",
+          "link": "/streetmap/"
+        }
+      ]
+    },
+    {
+      "title": "News",
+      "subItems": [
+        {
+          "title": "News Releases",
+          "link": "/news/"
+        },
+        {
+          "title": "Useful Links",
+          "link": "/links/"
+        }
+      ]
+    },
+    {
+      "title": "Directions",
+      "link": "/directions/"
+    }
+  ],
+  "contactLinks": [
+    {
+      "title": "Email",
+      "link": "caseypark@caseyindustrialpark.com",
+      "icon": "TbMail"
+    }
+  ]
+}
