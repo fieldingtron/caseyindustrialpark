@@ -13,10 +13,10 @@ const blog = defineCollection({
 
         return {
           ...node,
-          id: node?._sys.relativePath.replace(/\.mdx?$/, ""), // Generate clean URLs
+          id: node?._sys.relativePath.replace(/\.mdx?$/, "") || "", // Generate clean URLs
           tinaInfo: node?._sys, // Include Tina system info if needed
         };
-      });
+      }) || [];
   },
   schema: z.object({
     tinaInfo: z.object({
@@ -45,10 +45,10 @@ const page = defineCollection({
 
         return {
           ...node,
-          id: node?._sys.relativePath.replace(/\.mdx?$/, ""), // Generate clean URLs
+          id: node?._sys.relativePath.replace(/\.mdx?$/, "") || "", // Generate clean URLs
           tinaInfo: node?._sys, // Include Tina system info if needed
         };
-      });
+      }) || [];
   },
   schema: z.object({
     tinaInfo: z.object({
@@ -57,7 +57,8 @@ const page = defineCollection({
       path: z.string(),
       relativePath: z.string(),
     }),
-    seoTitle: z.string(),
+    title: z.string(),
+    blocks: z.array(z.any()).optional(),
     body: z.any(),
   }),
 })
