@@ -22,6 +22,6 @@ const data = await getTinaProps();
 ---
 
 <BaseLayout title={data.data.page.title} description={data.data.page.seoDescription}>
-  <Page {...data} client:tina />
+  <Page {...data} client:load />
 </BaseLayout>
 

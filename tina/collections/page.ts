@@ -22,6 +22,29 @@ export const PageCollection: Collection = {
       name: "body",
       type: "rich-text",
       isBody: true,
+      templates: [
+        {
+          name: "img",
+          label: "Image",
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.alt || "Image" };
+            },
+          },
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
+      ],
     },
     {
       name: "blocks",
@@ -32,6 +55,12 @@ export const PageCollection: Collection = {
         {
           name: "content",
           label: "Content",
+          ui: {
+            itemProps: (item) => {
+              const text = item?.body?.children?.[0]?.children?.[0]?.text;
+              return { label: text ? (text.length > 30 ? text.slice(0, 30) + "..." : text) : "Content" };
+            },
+          },
           fields: [
             {
               name: "body",
@@ -43,6 +72,11 @@ export const PageCollection: Collection = {
         {
           name: "image",
           label: "Image",
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.src || "Image" };
+            },
+          },
           fields: [
             {
               name: "src",
@@ -59,11 +93,35 @@ export const PageCollection: Collection = {
         {
           name: "heading",
           label: "Heading",
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.title || "Heading" };
+            },
+          },
           fields: [
             {
               name: "title",
               label: "Title",
               type: "string",
+            },
+          ],
+        },
+        {
+          name: "html",
+          label: "HTML Code",
+          ui: {
+            itemProps: (item) => {
+              return { label: "HTML Code" };
+            },
+          },
+          fields: [
+            {
+              name: "code",
+              label: "Code",
+              type: "string",
+              ui: {
+                component: "textarea",
+              },
             },
           ],
         },

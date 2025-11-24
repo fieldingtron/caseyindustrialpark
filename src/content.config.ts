@@ -26,10 +26,8 @@ const blog = defineCollection({
       relativePath: z.string(),
     }),
     title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    heroImage: z.string().nullish(),
+    blocks: z.array(z.any()).nullish(),
+    body: z.any(),
   }),
 });
 

@@ -97,7 +97,7 @@
   "contactLinks": [
     {
       "title": "Email",
-      "link": "caseypark@caseyindustrialpark.com",
+      "link": "/contact/",
       "icon": "TbMail"
     }
   ]

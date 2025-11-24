@@ -1,19 +1,27 @@
 ---
-title: "Space Availability"
+title: Space Availability
+blocks:
+  - code: |2-
+       <img src="/images/industrial-building-space.png" class="img-responsive center-block" alt="casey industrial park" usemap="#CASEY"/>
+          <map name="CASEY" id="CASEY">
+              <area title="" href="/blog/building1/" shape="rect" coords="615,306,739,340" />
+              <area title="" href="/blog/building2/" shape="rect" coords="581,341,764,383" />
+              <area title="" href="/blog/building3/" shape="rect" coords="63,212,534,250" />
+              <area title="" href="/blog/building4/" shape="rect" coords="92,252,532,275" />
+              <area title="" href="/blog/building9/" shape="rect" coords="549,229,563,271" />
+              <area title="" href="/blog/building14/" shape="rect" coords="764,409,583,388" />
+              <area title="" href="/shop/" shape="rect" coords="388,125,504,175" />
+          </map>
+    _template: html
+  - body: |
+      * [Building No. 1](/blog/building1/)
+      * [Building No. 2](/blog/building2/)
+      * [Building No. 3](/blog/building3/)
+      * [Building No. 4](/blog/building4/)
+      * [Building No. 9](/blog/building9/)
+      * [Building No. 14](/blog/building14/)
+      * [Electric Shop](/shop/)
+    _template: content
 ---
 
-# SPACE AVAILABILITY
-
-![Industrial Building Space](/images/industrial-building-space.png)
-
-<!--
-Image map functionality is not supported in Markdown. Please implement interactive maps in a React or Astro component if needed.
--->
-
-- [Building No. 1](/blog/building1/)
-- [Building No. 2](/blog/building2/)
-- [Building No. 3](/blog/building3/)
-- [Building No. 4](/blog/building4/)
-- [Building No. 9](/blog/building9/)
-- [Building No. 14](/blog/building14/)
-- [Electric Shop](/shop/)
+Below we have a visual map and then clickable links

@@ -11,9 +11,9 @@ const { title = config.seo.title, description = config.seo.description } = Astro
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <NavBar />
-    <div class="pt-5 mt-5">
+    <div class="pt-3 mt-3 flex-grow-1">
       <slot />
     </div>
     <Footer />
