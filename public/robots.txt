@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.caseyindustrialpark.com/sitemap-index.xml

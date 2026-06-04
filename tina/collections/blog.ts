@@ -19,6 +19,19 @@ export const BlogCollection: Collection = {
       required: true
     },
     {
+      name: "description",
+      label: "SEO Description",
+      description: "Used for the page meta description and social share text (~150-160 chars).",
+      type: "string",
+      ui: { component: "textarea" },
+    },
+    {
+      name: "heroImage",
+      label: "Hero / Social Image",
+      description: "Image used for social sharing (OpenGraph/Twitter).",
+      type: "image",
+    },
+    {
       name: "body",
       type: "rich-text",
       isBody: true,

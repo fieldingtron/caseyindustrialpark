@@ -21,7 +21,7 @@ const { getTinaProps } = Astro.props;
 const data = await getTinaProps();
 ---
 
-<BaseLayout title={data.data.page.title} description={data.data.page.seoDescription}>
+<BaseLayout title={data.data.page.title} description={data.data.page.description} image={data.data.page.heroImage}>
   <Page {...data} client:load />
 </BaseLayout>
 

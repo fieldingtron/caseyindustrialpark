@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Casey Industrial Park ",
-    "description": "Casey Industrial Park is a 1,000,000 square foot industrial facility located 3 miles outside of downtown Youngstown, OH",
-    "siteOwner": "Casey Industrial Park "
+    "title": "Casey Industrial Park | Crane-Served Industrial Space for Lease near Youngstown, OH",
+    "description": "Casey Industrial Park offers heavy industrial, warehouse, and crane-served manufacturing space for lease in Campbell, OH, minutes from downtown Youngstown. Rail access, heavy electrical power, natural gas, and overhead cranes available.",
+    "siteOwner": "Casey Industrial Park"
   },
   "nav": [
     {
@@ -26,32 +26,8 @@
           "link": "/space/"
         },
         {
-          "title": "Building No. 1",
-          "link": "/blog/building1/"
-        },
-        {
-          "title": "Building No. 2",
-          "link": "/blog/building2/"
-        },
-        {
-          "title": "Building No. 3",
-          "link": "/blog/building3/"
-        },
-        {
-          "title": "Building No. 4",
-          "link": "/blog/building4/"
-        },
-        {
-          "title": "Building No. 9",
-          "link": "/blog/building9/"
-        },
-        {
-          "title": "Building No. 14",
-          "link": "/blog/building14/"
-        },
-        {
-          "title": "Electric Shop",
-          "link": "/shop/"
+          "title": "Bay 7",
+          "link": "/blog/bay7/"
         }
       ]
     },
